@@ -38,6 +38,12 @@ function App() {
         case response.weather[0].main == "Haze":
           setIcon(haza);
           break;
+        case response.weather[0].main == "Rain":
+          setIcon(rain);
+          break;
+        case response.weather[0].main == "Smoke":
+          setIcon(smoke);
+          break;
         default:
           break;
       }
@@ -60,7 +66,7 @@ function App() {
         <div className=" w-[35%] rounded-xl mt-10 bg-[rgba(0,0,0,0.3)] mx-auto flex justify-center flex-col align-middle items-center py-10">
           <div className="flex gap-3 w-[95%]">
             <input
-              className="w-[95%] h-10 rounded-md bg-white text-black outline-none"
+              className="w-[95%] h-10 rounded-md bg-white text-black outline-none px-4"
               type="text"
               onChange={(e) => {
                 setInput(e.target.value);
@@ -96,7 +102,7 @@ function App() {
           <div>
             <div className="flex  flex-col gap-5 pt-14">
               <div className="flex justify-center items-center text-white text-3xl">
-                <img className="h-24" src={icon} alt="" />
+                <img className="h-36 w-36" src={icon} alt="" />
               </div>
               <div className="flex justify-center items-center text-white text-3xl">
                 {name}
