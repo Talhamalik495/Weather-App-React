@@ -103,7 +103,7 @@ function App() {
           <div className="felx">
             <div className="flex  flex-col pt-7">
               <div className="flex justify-center items-center text-white text-3xl">
-                <img className="h-36 w-36" src={icon} alt="" />
+                <img className="max-h-36 max-w-36" src={icon} alt="" />
               </div>
               <div className="flex justify-center items-center text-white text-3xl">
                 {name}
