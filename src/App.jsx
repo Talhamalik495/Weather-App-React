@@ -45,6 +45,8 @@ function App() {
           setIcon(smoke);
           break;
         default:
+          setIcon("Not Found");
+
           break;
       }
       console.log(response);
@@ -70,8 +72,8 @@ function App() {
               type="text"
               onChange={(e) => {
                 setInput(e.target.value);
-                console.log(e.target.value);
               }}
+            
             />
             <select
               className="rounded-md bg-white text-black outline-none"
