@@ -73,7 +73,6 @@ function App() {
               onChange={(e) => {
                 setInput(e.target.value);
               }}
-            
             />
             <select
               className="rounded-md bg-white text-black outline-none"
@@ -86,8 +85,6 @@ function App() {
               <option value="New York">New York</option>
               <option value="Paris">Paris</option>
               <option value="London">London</option>
-              <option value="Shanghal">Shanghal</option>
-              <option value="Los Angleles">Los Angleles</option>
               <option value="Beijing">Beijing</option>
               <option value="Mumbai">Mumbai</option>
               <option value="Moscow">Moscow</option>
@@ -98,6 +95,8 @@ function App() {
               <option value="Istambul">Istambul</option>
               <option value="Sydney">Sydney</option>
               <option value="Mexico City">Mexico City</option>
+              <option value="China">China</option>
+              <option value="Turkey">Turkey</option>
               <option value="Berlin">Berlin</option>
             </select>
           </div>
