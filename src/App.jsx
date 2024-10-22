@@ -99,8 +99,8 @@ function App() {
               <option value="Berlin">Berlin</option>
             </select>
           </div>
-          <div>
-            <div className="flex  flex-col gap-5 pt-14">
+          <div className="felx">
+            <div className="flex  flex-col pt-7">
               <div className="flex justify-center items-center text-white text-3xl">
                 <img className="h-36 w-36" src={icon} alt="" />
               </div>
@@ -108,7 +108,7 @@ function App() {
                 {name}
               </div>
             </div>
-            <div className="flex items-end gap-10 mt-32">
+            <div className="flex items-end gap-10 mt-20">
               <div className="flex gap-5">
                 <img
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAjCAYAAAAJ+yOQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKNSURBVHgB7VjhedowFHyeoGxQbVBvUGeC0AkKE5ROkGaDZgLcCUImwJ0AMoHVCeJOoL6HT0hRJVn8133ffQah08lCfodojDEnIpqYL8xD0zSaIuB+HV++MlvmiqnBX6wZEhrpew9NCx8NryHmxRoZe8P8BM224UYT9OvFGAMKOuY3pqI0Bmg02ELTZTQ60LWY2I7mRbC4k0k+YwItLWPCwBM0HZXhDCqPpV6P1xb5api9iePE/IGvwtcotI8RzRvzp/QJ3bltwzwmvKR97fdvIgPIROy+u6xCap8GOtEo6GTVNOumBY0it7JTqVdFRUUBpE4eySXOsJA4kh6KvCef+ZTR2PT47Gmk72/W9JSAl26K+T1MHBlgIJcCgjUm11EaB2jOeK9gssloNM2FWjST5xWm251dSUXlKaBxtfW0BJrcTfs1uMRre22RKp9JgbdM4vT4PJUeXeiOxBkTGkm3ne8VSxxF/yfOmRaAyShvFYaCxPFTqtiroqKiALZOyhP1WpACkhwK1KKh/LnIP6/4ifOSOhd5XvfQPFFQo0bUsBadpQ52Jl0/LfbotwLl9UOmfqa8dhGvTlbyRO9r1RI0uYNTqcamB1F5SlmvL9d3Jp8CS4mTwtEEiYOVvskrljj2jKywApeTXi49jEsphSabOJoyMC6lFFZN5/ZqRUXFDZA6uefrH5qfxiHV0bxPD4E8wa+UPxfZX+82PQheh9zvRjz19g+sx2jihAIzJ0oOe+P954Na+GDyiXOM1NBYul0SZ6T4+Ubj7sNUmcidcVKfqUQ73egl7Vt7B5IcuRQQPBfeuY8R4648zVJKFSXOmub98JH5F3fTLySO9O/I7deSPa6gEe0HeMk+PYRe/wAZZsqtKSzwgAAAAABJRU5ErkJggg=="
