@@ -12,6 +12,7 @@ function App() {
   const [wind, setWind] = useState(6.17);
   const [name, setName] = useState("");
   const [icon, setIcon] = useState("");
+  const [temp, setTemp] = useState("");
 
   console.log(input);
 
@@ -24,10 +25,13 @@ function App() {
         `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${APIKEY}`
       );
       const response = await url.json();
+      console.log(response);
+
       setWind(Math.round(response.wind.speed));
       setHumaidaty(response.main.humidity);
       setName(response.name);
       setIcon(response.weather[0].main);
+      setTemp(response.main.temp);
       switch (true) {
         case response.weather[0].main == "Clouds":
           setIcon(clouds);
@@ -107,6 +111,9 @@ function App() {
               </div>
               <div className="flex justify-center items-center text-white text-3xl">
                 {name}
+              </div>
+              <div className="flex justify-center items-center text-white text-3xl">
+                {temp}
               </div>
             </div>
             <div className="flex items-end gap-10 mt-20">
