@@ -24,6 +24,8 @@ function App() {
       const url = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${APIKEY}`
       );
+      console.log(url);
+
       const response = await url.json();
       console.log(response);
 
@@ -31,7 +33,7 @@ function App() {
       setHumaidaty(response.main.humidity);
       setName(response.name);
       setIcon(response.weather[0].main);
-      setTemp(response.main.temp);
+      setTemp(Math.round(response.main.temp - 273.15));
       switch (true) {
         case response.weather[0].main == "Clouds":
           setIcon(clouds);
@@ -48,12 +50,19 @@ function App() {
         case response.weather[0].main == "Smoke":
           setIcon(smoke);
           break;
+        case response.weather[0].main == "Mist":
+          setIcon(smoke);
+          break;
+        case response.weather[0].main == "Fog":
+          setIcon(smoke);
+          break;
         default:
           setIcon("Not Found");
 
           break;
       }
       console.log(response);
+      console.log(response.weather[0].main);
     } catch (error) {
       console.log(error);
     }
@@ -113,7 +122,7 @@ function App() {
                 {name}
               </div>
               <div className="flex justify-center items-center text-white text-3xl">
-                {temp}
+                {`${temp}°C`}
               </div>
             </div>
             <div className="flex items-end gap-10 mt-20">
