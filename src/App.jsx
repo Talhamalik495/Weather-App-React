@@ -61,8 +61,6 @@ function App() {
 
           break;
       }
-      console.log(response);
-      console.log(response.weather[0].main);
     } catch (error) {
       console.log(error);
     }
